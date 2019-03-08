@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ImplicitIntentAssignment.iml" filepath="$PROJECT_DIR$/ImplicitIntentAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Implicit-Intent-Assignment.iml" filepath="$PROJECT_DIR$/Implicit-Intent-Assignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -20,31 +20,84 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/margin_medium_2"
         android:paddingLeft="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_medium_2"
         android:paddingRight="@dimen/margin_medium_2"
-        android:paddingTop="@dimen/margin_medium_2">
-
-        <VideoView
-            android:id="@+id/videoview"
-            android:layout_width="300dp"
-            android:layout_height="200dp"/>
+        android:paddingBottom="@dimen/margin_medium_2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <Button
-            android:text="Play"
+            android:id="@+id/btn_alarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/videoview"
-            android:onClick="onButtonClick"
-            android:id="@+id/button"/>
+            android:text="Create A Timer" />
 
+        <Button
+            android:id="@+id/btn_calendar_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_alarm"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="Create A Calender Event" />
 
-        
+        <VideoView
+            android:id="@+id/vv_video"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/btn_calendar_event" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vv_video"
+            android:text="Capture a video" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_below="@id/btn_video"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_below="@id/tv_name"/>
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:text="Select a Contact" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_contact"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_search"
+            android:text="Web Search" />
     </RelativeLayout>
-
+    </ScrollView>
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
